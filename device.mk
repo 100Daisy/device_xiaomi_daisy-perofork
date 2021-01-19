@@ -211,9 +211,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    libdisplayconfig.qti \
     liboverlay \
-    libqdMetaData.system \
     libqdMetaData \
     libgenlock \
     libtinyxml \
