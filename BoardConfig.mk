@@ -225,8 +225,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_USES_AOSP_WLAN_HAL := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/daisy/BoardConfigVendor.mk
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+-include vendor/xiaomi2/daisy/BoardConfigVendor.mk
+-include vendor/xiaomi2/msm8953-common/BoardConfigVendor.mk
 
 # Twrp
 -include $(DEVICE_PATH)/twrp/twrp.mk
