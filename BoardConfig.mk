@@ -166,8 +166,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/xiaomi/daisy
-TARGET_KERNEL_CONFIG := daisy_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+TARGET_KERNEL_CONFIG := sleepy_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
 
@@ -244,5 +244,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_USES_AOSP_WLAN_HAL := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/daisy/BoardConfigVendor.mk
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+-include vendor/xiaomi2/daisy/BoardConfigVendor.mk
+-include vendor/xiaomi2/msm8953-common/BoardConfigVendor.mk
