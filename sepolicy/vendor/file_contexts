@@ -77,7 +77,7 @@
 /sys/devices/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 
 # USB
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.basic       u:object_r:hal_usb_default_exec:s0
+#/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.basic       u:object_r:hal_usb_default_exec:s0
 
 # Power HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti   u:object_r:hal_power_default_exec:s0
