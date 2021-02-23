@@ -26,9 +26,6 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:camera_socket:s0
 
-# Move Time Data
-/system/bin/move_time_data\.sh                                                u:object_r:move-time-data-sh_exec:s0
-
 # Firmware (Root folders)
 /firmware(/.*)?          u:object_r:firmware_file:s0
 
