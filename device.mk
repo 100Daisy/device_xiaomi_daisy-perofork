@@ -37,7 +37,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
-
+    
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -129,8 +129,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
-		vendor.qti.hardware.btconfigstore@1.0.vendor \
-		vendor.qti.hardware.btconfigstore@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
     libbt-vendor \
     libbthost_if
 
@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libgenlock \
     libtinyxml \
-		vendor.display.config@2.0 \
+    vendor.display.config@2.0 \
     vendor.display.config@2.0_vendor
 
 # Vulkan
@@ -366,7 +366,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libqti_vndfwk_detect
 
 # RCS
 PRODUCT_PACKAGES += \
