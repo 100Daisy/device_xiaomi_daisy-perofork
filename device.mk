@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio@2.0-service \
+    android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.r_submix.default \
@@ -212,6 +212,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     liboverlay \
+    libqdMetaData.system \
     libqdMetaData \
     libgenlock \
     libtinyxml \
@@ -369,6 +370,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect
+
+# QTI Common
+TARGET_COMMON_QTI_COMPONENTS := \
+		perf \
+		wfd
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -546,14 +552,6 @@ PRODUCT_COPY_FILES += \
 # ARCore
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
-
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Doze
 PRODUCT_PACKAGES += \
