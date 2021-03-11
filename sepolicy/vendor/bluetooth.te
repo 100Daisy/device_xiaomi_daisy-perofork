@@ -3,14 +3,10 @@ allow bluetooth cnd_vendor_prop:file read;
 allow bluetooth boottime_prop:file read;
 allow bluetooth hal_perf_hwservice:hwservice_manager find;
 allow bluetooth hal_perf_default:binder call;
-allow bluetooth vendor_file:file { read open };
+allow bluetooth vendor_file:file { read };
 allow bluetooth gpuservice:binder { call };
 allow bluetooth theme_prop:file { read open getattr };
 allow bluetooth sysfs_kgsl:dir { search };
 
 # Binder call with gpuservice
 binder_call(bluetooth, gpuservice)
-
-allow bluetooth unlabeled:file { open read getattr };
-allow bluetooth incremental_prop:file { open read getattr };
-allow bluetooth vendor_bluetooth_prop:file { open read getattr };

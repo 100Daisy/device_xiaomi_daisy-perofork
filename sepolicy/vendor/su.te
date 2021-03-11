@@ -1,1 +1,0 @@
-allow su vendor_file:file { entrypoint };

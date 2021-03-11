@@ -1,2 +1,0 @@
-allow update_engine device:file { write open };
-allow update_engine device:file { read getattr };
